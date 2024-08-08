@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web site s4q systems">
+    <meta name="author" content="Diego Ignacio Alvial Arrepol">
+
+    <!-- Logo OrionCapital -->
+    <title>s4q</title>
+    <link href="/img/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <!-- CDN Bootstrap v5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- emailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">(function(){emailjs.init("kIwIM3vhDCyxl_9Fi");})();</script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="/portafolio/portafolio.html">Portafolio</a></li>
+                <li><a href="/services/services.html">Servicios</a></li>
+                <li><a href="/nosotros/nosotros.html">Nosotros</a></li>
+                <li><a href="" data-bs-toggle="modal" data-bs-target="#myModal">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Linea separacion-->
+    <hr class="featurette-divider">
+    
+    <!-- Pie de pagina -->
+    <footer>
+        <div class="d-flex justify-content-center">
+            <h6> ©Copyright 2024 S4q Co. All Rights Reserved.</h6>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document"> 
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Módulo Contacto</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline was-validated">
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="text" class="form-control" placeholder="nombre" id="fullName" required>
+                            <div class="valid-feedback va">dato válido</div>
+                            <div class="invalid-feedback va">ingresar nombre</div>
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock"></i>
+                            <input type="email" class="form-control" placeholder="correo" id="email_id" required>
+                            <div class="valid-feedback va">dato válido</div>
+                            <div class="invalid-feedback va">ingresar email válido</div>			
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock"></i>
+                            <input type="text" class="form-control" placeholder="teléfono" id="phone" required>
+                            <div class="valid-feedback va">dato válido</div>
+                            <div class="invalid-feedback va">ingresar teléfono de contacto</div>			
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock"></i>
+                            <textarea class="form-control" rows="10" placeholder="mensaje" id="message" required></textarea>
+                            <div class="valid-feedback">
+                                <button id="enviar" type="button" class="btn btn-success btn-block btn-lg" data-bs-dismiss="modal">Enviar</button>
+                            </div>
+                            <div class="invalid-feedback va">ingresar mensaje</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Funciones HTML -->
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>

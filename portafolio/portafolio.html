@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porafolio</title>
+    <link href="/img/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <style>
+        .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #3498db;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #3498db;
+}
+    </style>
+</head>
+<body>
+    <p align="left">
+        <a href="javascript:history.back()">Volver</a>
+    </p>
+    <table style="margin: 0 auto;" class="styled-table">
+        <thead>
+            <tr>
+                <th>Repositorio</th>
+                <th>URL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="active-row">
+                <td>GitHub</td>
+                <td><a href="https://github.com/s4qsistemas">S4q-Sistemas</a></td>
+            </tr>
+            <thead>
+                <tr>
+                    <th>Diseño Web</th>
+                    <th>URL</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Sitio Turismo</td>
+                <td><a href="https://lota-trip.web.app">Plantilla</a></td>
+            </tr>
+            <tr>
+                <td>Sitio Productos</td>
+                <td><a href="https://playground-chile.web.app">Plantilla</a></td>
+            </tr><!-- 
+            <tr class="active-row">
+                <td>WordPress</td>
+                <td><a href="https://www.lotaprotein.cl/index.php/denuncia/">Formulario Web</a></td>
+            </tr> -->
+            <!-- and so on... -->
+        </tbody>
+    </table>
+
+</body>
+</html>
