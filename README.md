@@ -63,7 +63,7 @@ Si deseas contribuir al proyecto, por favor sigue estos pasos:
 Si tienes alguna pregunta o deseas discutir un proyecto, no dudes en ponerte en contacto con nosotros:
 
 - **Correo electrónico**: [sigm4q@gmail.com](mailto:sigm4q@gmail.com)
-- **Sitio web**: [https://s4q.cl](https://s4q.cl)
+- **Sitio web**: [https://s4q.cl](https://s4q-sistemas.web.app)
 
 ## Licencia
 
